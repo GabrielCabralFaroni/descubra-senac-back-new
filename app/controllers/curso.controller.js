@@ -6,6 +6,12 @@ exports.findAll = (req, res) => {
 
     Curso.findAll()
       .then(data => {
+
+        if(data.length < 0){
+          popularBase();
+          res.send("nao tem nada")
+        }
+
         res.send(data);
       })
       .catch(err => {
@@ -32,7 +38,10 @@ exports.findAllByName = (req, res) => {
     console.log(req.query.titulo);
 };
 
+function popularBase(){
 
+
+}
 
 
 // // exports.findOne = (req, res) => {
