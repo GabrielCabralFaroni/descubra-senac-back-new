@@ -38,52 +38,68 @@ module.exports = (sequelize, Sequelize) => {
       allowNull: false
     },
     parcelas: {
-      type: Sequelize.TEXT
+      type: Sequelize.TEXT,
+      allowNull: false
     },
     parcela_valor: {
-      type: Sequelize.TEXT
+      type: Sequelize.TEXT,
+      allowNull: false
     },
     prerequisitos: {
-      type: Sequelize.TEXT
+      type: Sequelize.TEXT,
+      allowNull: false
     },
     matricula: {
-      type: Sequelize.TEXT
+      type: Sequelize.TEXT,
+      allowNull: false
     },
     categoria: {
-      type: Sequelize.TEXT
+      type: Sequelize.TEXT,
+      allowNull: false
     },
     subcategoria: {
-      type: Sequelize.TEXT
+      type: Sequelize.TEXT,
+      allowNull: false
     },
     categoria_pai: {
-      type: Sequelize.TEXT
+      type: Sequelize.TEXT,
+      allowNull: false
     },
     nivel: {
-      type: Sequelize.TEXT
+      type: Sequelize.TEXT,
+      allowNull: false
     },
     modalidade: {
-      type: Sequelize.TEXT
+      type: Sequelize.TEXT,
+      allowNull: false
     },
     codigo_imagem: {
-      type: Sequelize.TEXT
+      type: Sequelize.TEXT,
+      allowNull: false
     },
     codigo_arquivo: {
       type: Sequelize.TEXT,
+      allowNull: false
     },
     extensao: {
       type: Sequelize.TEXT,
+      allowNull: false
     },
     grayphoto: {
       type: Sequelize.TEXT,
+      allowNull: false
     },
     qtd: {
-      type: Sequelize.TEXT
+      type: Sequelize.TEXT,
+      allowNull: false
     },
     imagem_url: {
       type: Sequelize.TEXT,
+      allowNull: false
     },
     arquivo: {
       type: Sequelize.TEXT,
+      allowNull: false
     }
   });
 
