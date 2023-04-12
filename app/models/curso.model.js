@@ -1,5 +1,5 @@
 module.exports = (sequelize, Sequelize) => {
-  const Curso = sequelize.define("curso_senac", {
+  const Curso = sequelize.define("cursos_", {
     id: {
       type: Sequelize.INTEGER,
       primaryKey: true,
@@ -30,65 +30,60 @@ module.exports = (sequelize, Sequelize) => {
       allowNull: false
     },
     cargahoraria: {
-      type: Sequelize.STRING,
+      type: Sequelize.TEXT,
       allowNull: false
     },
     valor_total: {
-      type: Sequelize.STRING,
+      type: Sequelize.TEXT,
       allowNull: false
     },
     parcelas: {
-      type: Sequelize.STRING
+      type: Sequelize.TEXT
     },
     parcela_valor: {
-      type: Sequelize.STRING
+      type: Sequelize.TEXT
     },
     prerequisitos: {
-      type: Sequelize.STRING
+      type: Sequelize.TEXT
     },
     matricula: {
-      type: Sequelize.STRING
+      type: Sequelize.TEXT
     },
     categoria: {
-      type: Sequelize.STRING
+      type: Sequelize.TEXT
     },
     subcategoria: {
-      type: Sequelize.STRING
+      type: Sequelize.TEXT
     },
     categoria_pai: {
-      type: Sequelize.STRING
+      type: Sequelize.TEXT
     },
     nivel: {
-      type: Sequelize.STRING
+      type: Sequelize.TEXT
     },
     modalidade: {
-      type: Sequelize.STRING
+      type: Sequelize.TEXT
     },
     codigo_imagem: {
-      type: Sequelize.STRING
+      type: Sequelize.TEXT
     },
     codigo_arquivo: {
-      type: Sequelize.STRING,
-      allowNull: true
+      type: Sequelize.TEXT,
     },
     extensao: {
-      type: Sequelize.STRING,
-      allowNull: true
+      type: Sequelize.TEXT,
     },
     grayphoto: {
-      type: Sequelize.BOOLEAN,
-      defaultValue: false
+      type: Sequelize.TEXT,
     },
     qtd: {
-      type: Sequelize.INTEGER
+      type: Sequelize.TEXT
     },
     imagem_url: {
-      type: Sequelize.STRING,
-      allowNull: true
+      type: Sequelize.TEXT,
     },
     arquivo: {
-      type: Sequelize.BOOLEAN,
-      defaultValue: false
+      type: Sequelize.TEXT,
     }
   });
 

@@ -1,7 +1,7 @@
 module.exports = app => {
     const curso = require("../controllers/curso.controller.js");
   
-    var router = require("express").Router();
+    var router = require("express").Router(); 
   
     router.get("/obtercursos", curso.findAll);
 
