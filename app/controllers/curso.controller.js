@@ -8,7 +8,7 @@ exports.findAll = (req, res) => {
       .then(data => {
 
         if(data.length < 0){
-          popularBase();
+      
           res.send("nao tem nada")
         }
 
@@ -38,10 +38,10 @@ exports.findAllByName = (req, res) => {
     console.log(req.query.titulo);
 };
 
-function popularBase(){
+// function popularBase(){
 
 
-}
+// }
 
 
 // // exports.findOne = (req, res) => {
