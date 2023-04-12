@@ -6,16 +6,7 @@ exports.findAll = (req, res) => {
 
     Curso.findAll()
       .then(data => {
-
-        if(data.length < 0){
-      
-          res.send("nao tem nada")
-        }
-        else{
-
-          res.send(data);
-        }
-
+        res.send(data);
       })
       .catch(err => {
         res.status(500).send({
