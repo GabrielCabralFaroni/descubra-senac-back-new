@@ -5,6 +5,8 @@ module.exports = app => {
   
     router.get("/obtercursos", curso.findAll);
 
+    router.get("/obtercursospelonome", curso.findAllByName);
+
     app.use("/api", router);
 
   };
