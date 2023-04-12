@@ -11,8 +11,11 @@ exports.findAll = (req, res) => {
       
           res.send("nao tem nada")
         }
+        else{
 
-        res.send(data);
+          res.send(data);
+        }
+
       })
       .catch(err => {
         res.status(500).send({
