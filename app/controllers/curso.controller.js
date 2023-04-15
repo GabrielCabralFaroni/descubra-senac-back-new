@@ -16,9 +16,15 @@ exports.findAll = (req, res) => {
       });
 };
 
+<<<<<<< HEAD
 exports.FindByName = (req, res) => {
 
   Curso.findAll()
+=======
+exports.findAllByName = (req, res) => {
+
+  Curso.findAll({ where: { titulo: req.query.titulo } })
+>>>>>>> 27a74e403082005f511701e859eb0bf413513912
     .then(data => {
       res.send(data);
     })
@@ -28,8 +34,21 @@ exports.FindByName = (req, res) => {
           err.message || "Erro ao consultar cursos."
       });
     });
+<<<<<<< HEAD
 };
 
+=======
+
+    console.log(req.query.titulo);
+};
+
+// function popularBase(){
+
+
+// }
+
+
+>>>>>>> 27a74e403082005f511701e859eb0bf413513912
 // // exports.findOne = (req, res) => {
   
 // // };
