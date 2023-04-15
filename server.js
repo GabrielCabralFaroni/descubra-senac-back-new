@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const db = require("./app/models");
-db.sequelize.sync()
+db.sequelize.sync()                 // esse sync serviu para quando mandar, criar a tabela por exemplo, quando mandamos em curso.model
     .then(() => {
         console.log("Sucesso ao sincronizar com o banco.");
     })
@@ -41,3 +41,5 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}.`);
 });
+
+// server como oq fez ligação com o postgress

@@ -13,3 +13,7 @@ module.exports = {
       idle: 10000
     }
   };
+
+
+
+  // db config  deu as informações(credencias) para a ligação com o postgress que o server vai ler.

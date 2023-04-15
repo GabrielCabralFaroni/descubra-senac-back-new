@@ -105,3 +105,6 @@ module.exports = (sequelize, Sequelize) => {
 
   return Curso;
 };
+
+
+// curso.model em formato objeto  serviu para informar a criação de tabela no postgress
