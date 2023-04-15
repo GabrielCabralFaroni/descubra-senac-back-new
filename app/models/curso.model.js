@@ -108,3 +108,4 @@ module.exports = (sequelize, Sequelize) => {
 
 
 // curso.model em formato objeto  serviu para informar a criação de tabela no postgress
+// lembrando que para colocar os dados nas tabelas,colunas lá no postgress utilizamos a conversao do banco que está no bloco de notas (estava em json) para insert SQL , google tem o link
